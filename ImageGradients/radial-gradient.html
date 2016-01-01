@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id1, #id2, #id3, #id4, #id5, #id6, #id7, #id8, #id9, #id10, #id11, #id12, #id13, #id14{width: 200px; height: 100px}
+      #id1{
+        background: radial-gradient(circle, white, skyblue);
+      }
+      #id2{
+        background: radial-gradient(ellipse, white, orange);
+      }
+      #id3{
+        background: radial-gradient(circle, red, orange, yellow, green, blue, navy, purple);
+      }
+      #id4{
+        background: radial-gradient(ellipse, yellow, orange, red, black);
+      }
+      #id5{
+        background: radial-gradient(50px 50px at 100px 50px, red, yellow, white, black);
+      }
+      #id6{
+        background: radial-gradient(30px 30px at 30px 70px, red, yellow, white, black);
+      }
+      #id7{
+        background: radial-gradient(closest-side at 50px 30px, red, yellow, white, black);
+      }
+      #id8{
+        background: radial-gradient(closest-side at 150px 60px, red, yellow, white, black);
+      }
+      #id9{
+        background: radial-gradient(closest-corner at 50px 30px, red, yellow, white, black);
+      }
+      #id10{
+        background: radial-gradient(closest-corner at 150px 60px, red, yellow, white, black);
+      }
+      #id11{
+        background: radial-gradient(farthest-side at 50px 30px, red, yellow, white, black);
+      }
+      #id12{
+        background: radial-gradient(farthest-side at 150px 60px, red, yellow, white, black);
+      }
+      #id13{
+        background: radial-gradient(farthest-corner at 50px 30px, red, yellow, white, black);
+      }
+      #id14{
+        background: radial-gradient(farthest-corner at 150px 60px, red, yellow, white, black);
+      }
+    </style>
+  </head>
+  <body>
+    <p>중앙에서 밖으로 원 형태로 그라데이션</p>
+    <p id=id1></p>
+
+    <p>타원형 그라데이션</p>
+    <p id=id2></p>
+
+    <p>다수의 색 조합</p>
+    <p id=id3></p>
+
+    <p>드래곤볼</p>
+    <p id=id4></p>
+
+    <p>x:100, y:50이 중심이고 반지름 x:50, y:50인 방사 그라데이션</p>
+    <p id=id5></p>
+
+    <p>x:30, y:70이 중심이고 반지름 x:30, y:30인 방사 그라데이션</p>
+    <p id=id6></p>
+
+    <p>50px 30px에서 가장 가까운 박스의 가장자리에 접하도록 맞추므로 좌상단 방향으로 그라데이션 전개</p>
+    <p id=id7></p>
+
+    <p>150px 60px에서 가장 가까운 박스의 가장자리에 접하도록 맞추므로 우하단 방향으로 그라데이션 전개</p>
+    <p id=id8></p>
+
+    <p>지정된 위치에서 가까운 박스의 코너에 접하도록 맞춤</p>
+    <p id=id9></p>
+    <p id=id10></p>
+
+    <p>지정된 위치에서 거리가 가장 먼 박스에 접하도록 맞춤</p>
+    <p id=id11></p>
+    <p id=id12></p>
+
+    <p>지정된 위치에서 거리가 먼 박스의 코너에 접하도록 맞춤</p>
+    <p id=id13></p>
+    <p id=id14></p>
+  </body>
+</html>
+
+<!--
+  방사(원형) 그라데이션 함수
+    중심에서 원, 타원형으로 퍼져나가면서 그라데이션 표현
+
+-->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .base{background-image: url("../images/dog.jpg"); background-repeat: no-repeat;}
+      #id1{width: 180px; height: 180px; border: solid 2px hsl(270, 50%, 80%);}
+      #id2, #id3, #id4, #id5{width: 100px; height: 100px; border: solid 2px hsl(270, 50%, 80%);}
+      #id6{width: 220px; height: 220px; border: solid 2px hsl(270, 50%, 80%); background-size: contain;}
+    </style>
+  </head>
+  <body>
+    <p id=id1 class=base>#id1 원본 180px 180px</p>
+    <p id=id2 class=base style="background-size: auto auto">auto auto</p>
+    <p id=id3 class=base style="background-size: 100% 100%">100% 100%</p>
+    <p id=id4 class=base style="background-size: 70px 70px">70px 70px</p>
+    <p id=id5 class=base style="background-size: cover">cover</p>
+    <p id=id6 class=base>contain</p>
+  </body>
+</html>
+
+<!--
+  background 이미지 크기 지정
+    <lenth> : 크기 값으로 확대/축소
+    <percentage> : 비율을 반영하여 확대/축소
+                  background-origin에 지정한 위치에 표시
+
+    auto
+    cover
+    contain
+-->

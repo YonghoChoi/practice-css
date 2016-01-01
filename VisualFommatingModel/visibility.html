@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id=wrapper>
+      <div id=id1 style="visibility:visible">visible</div>
+      <div id=id2 style="visibility:hidden">parent hidden
+        <div id=id3 style="visibility:visible">child visible</div></div>
+    </div>
+    <table>
+      <thead><tr><th class=item>1번</th>
+        <th class=item>2번</th>
+      </thead>
+      <tbody>
+        <tr><td>1-1</td><td>1-2</td>
+        <tr style="visibility:collapse"><td>2-1</td><td>2-2</td>
+        <tr><td>3-1</td><td>3-2</td>
+        <tr><td>4-1</td><td style="visibility:collapse">4-2</td>
+      </tbody>
+    </table>
+  </body>
+</html>

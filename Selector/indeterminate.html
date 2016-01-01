@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="setIndeterminate();">
+    <style media="screen">
+      input:indeterminate{outline: inset 4px yellow;}
+    </style>
+
+    <p>스포츠를 선택하세요
+      <label><input id=id1 type="checkbox">야구</label>
+      <label><input id=id2 type="checkbox">축구</label>
+    </p>
+    <script>
+      function setIndeterminate(){
+        document.getElementById('id2').indeterminate = true;
+      }
+    </script>
+  </body>
+</html>

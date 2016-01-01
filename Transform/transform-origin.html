@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id1, #id2, #id3, #id4{
+        position: absolute; width: 100px; height: 50px; border: red solid 1px;
+      }
+      #id11, #id12, #id13, #id14{
+        position: absolute; width: 100px; height: 50px; background-color: cornflowerBlue;
+      }
+      #id1{top: 140px; left: 70px}
+      #id2{top: 140px; left: 180px}
+      #id3{top: 140px; left: 310px}
+      #id4{top: 140px; left: 420px}
+
+      .left{transform-origin: left}
+      .right{transform-origin: right}
+      .top{transform-origin: top}
+      .bottom{transform-origin: bottom}
+      .rotate{transform: rotate(90deg)}
+    </style>
+  </head>
+  <body>
+    <div id=id1><div id=id11>left</div></div>
+    <div id=id2><div id=id12>right</div></div>
+    <div id=id3><div id=id13>top</div></div>
+    <div id=id4><div id=id14>bottom</div></div>
+
+    <script type="text/javascript">
+      function addEvent(id, origin){
+        var el = document.getElementById(id);
+        el.addEventListener('click', function(2){
+          e.currentTarget.className = origin + 'rotate';
+        }, false);
+      }
+      addEvent('id11', 'left');
+      addEvent('id12', 'right');
+      addEvent('id13', 'top');
+      addEvent('id14', 'bottom');
+    </script>
+  </body>
+</html>

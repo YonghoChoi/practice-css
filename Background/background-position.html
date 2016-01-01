@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .image{
+        background-image: url("../images/apple.jpg");
+        width: 32px; height: 36px;
+        background-repeat: no-repeat;
+      }
+      .image-two{
+        background-image: url("../images/apple.jpg"), url("../images/apple.jpg");
+        width: 32px; height: 36px;
+        background-repeat: no-repeat;
+      }
+      .border{
+        width: 150px; height: 100px;
+        border: solid gray 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="image border">지정 안함(0% 0%)</p>
+    <p class="image border" style="background-position: left">left</p>
+    <p class="image border" style="background-position: center">center</p>
+    <p class="image border" style="background-position: right">right</p>
+    <p class="image border" style="background-position: top">top</p>
+    <p class="image border" style="background-position: bottom">bottom</p>
+
+    <p class="image border" style="background-position: 30% 30%">30% 30%</p>
+    <p class="image border" style="background-position: 30px 30px">30px 30px</p>
+    <p class="image-two border" style="background-position: 0px 0px, bottom">0px 0px, bottom</p>
+  </body>
+</html>
+
+<!--
+  background 이미지 포지셔닝
+    <percentage> : border 박스를 기준으로 x,y 위치 값 갱신
+
+-->

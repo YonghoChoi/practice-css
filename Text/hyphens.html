@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p{
+        width: 160px; text-align: justify;
+        font-size: 20px; font-family: '맑은 고딕';
+        border: solid 2px hsl(270, 50%, 90%);
+      }
+      #id1{-webkit-hyphens: none; hyphens: none}
+      #id2, #id3, #id4{hyphens: manual}
+      #id5{hyphens: auto}
+    </style>
+  </head>
+  <body>
+    <p id=id1 lang=en>#id1. Have a nice-day.</p>
+    <p id=id2 lang=en>#id2. Have a niceday.</p>
+    <p id=id3 lang=en>#id3. Have a nice-day.크롬, 오페라 지원</p>
+    <p id=id4 lang=en>#id4. Have a nice"&shy;"day. firefox 지원</p>
+    <p id=id5 lang=en>#id5. Have a niceday. firefox 지원</p>
+  </body>
+</html>
+
+<!--
+  하이픈으로 단어 연결
+    줄이 분리되어 한 단어가 끊어질 때 하이픈으로 단어를 이어줌
+    한글은 해당 안됨. 영어만 해당
+
+  값
+    normal
+    manual : 문자를 작성하여 라인 분리 지정 (ex - U+2010, U+00AD)
+    hard hyphen : 줄바꿈을 하지 않더라도 하이픈을 입력
+    soft hyphen : 텍스트에 &shy 입력
+    auto : 브라우저가 알아서
+-->

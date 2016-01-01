@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p{
+        width: 270px;
+        font-size: 20px; font-family: '맑은 고딕';
+        border: solid 2px hsl(270, 50%, 90%);
+      }
+      #id4{
+        -o-word-spacing: 200%; -ms-word-spacing: 200%;
+        -moz-word-spacing: 200%; -webkit-word-spacing: 200%;
+        word-spacing: 200%
+      }
+    </style>
+  </head>
+  <body>
+    <p id=id1 style="word-spacing: normal">#id1 normal 가 나 다</p>
+    <p id=id2 style="word-spacing: 10px">#id2 10px 가 나 다</p>
+    <p id=id3 style="word-spacing: -10px">#id3 -10px 가 나 다</p>
+    <p id=id4 style="word-spacing: normal">#id4 가 나 다</p>
+  </body>
+</html>
+
+<!--
+  단어 사이 간격 지정
+
+  <length> : 단어 간격을 px, em으로 지정 (음수 지정 가능)
+  <percentage> : 단어 간격을 퍼센트로 지정
+-->

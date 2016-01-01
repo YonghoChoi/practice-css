@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p{
+        width: 270px;
+        font-size: 20px; font-family: '맑은 고딕';
+        border: solid 2px hsl(270, 50%, 90%);
+      }
+    </style>
+  </head>
+  <body>
+    <p id=id1 style="white-space: normal">#id1. normal. 공백 세   칸을 1칸으로 표시. <br>여기서 줄 바꿈을 했으나 연결, 줄을 자동으로 바꾸어 width안에 표시.</p>
+    <p id=id2 style="white-space: nowrap">#id2. nowrap. 공백 세   칸을 1칸으로 표시. <br>여기서 줄 바꿈을 했으나 연결, 줄을 자동으로 바꾸어 width안에 표시하지 않음.</p>
+    <p id=id3 style="white-space: pre">#id3. pre. 공백 세   칸을 1칸으로 표시. <br>여기서 줄 바꿈을 했으나 연결, 줄을 자동으로 바꾸어 width안에 표시.</p>
+    <p id=id4 style="white-space: pre-wrap; height: 60px;">#id4. pre-wrap. 공백 세   칸을 그대로 표시. <br>여기서 줄 바꿈을 했으나 연결, 줄을 자동으로 바꾸어 width안에 표시.</p>
+    <p id=id5 style="white-space: pre-line">#id5. pre-line. 공백 세   칸을 1칸으로 표시. <br>여기서 줄 바꿈을 했으나 연결, 줄을 자동으로 바꾸어 width안에 표시.</p>
+  </body>
+</html>
+
+<!--
+  공백을 의미 (프로그래밍 전반에 같은 의미로 사용됨)
+
+  값
+    normal : 공백이 연속될 떄 하나로 줄여서 표시
+    nowrap : 화이트 스페이스가 연속될 때 하나로 줄여서 표시
+    pre : 화이트 스페이스를 그대로 표시 (자동개행 없음)
+    pre-wrap : 화이트 스페이스를 그대로 표시 (자동 개행 있음)
+    pre-line : 화이트 스페이스가 연속될 떄 하나로 표시
+-->

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p{
+        width: 270px;
+        font-size: 15px; font-family: '맑은 고딕';
+        border: solid 2px hsl(270, 50%, 90%);
+      }
+
+      #id1, #id2, #id3, #id4, #id5, #id6{
+        -webkit-text-align: justify; text-align: justify;
+      }
+      #id1{
+        -webkit-text-align: auto;
+        text-align-last: auto;
+      }
+
+      #id2 {text-align-last: start}
+      #id3 {text-align-last: end}
+      #id4 {text-align-last: left}
+      #id5 {text-align-last: right}
+      #id6 {text-align-last: center}
+    </style>
+  </head>
+  <body>
+    <p id=id1>auto. <br>한글1, 한글2, 한글3, 한글4, 한글5</p>
+    <p id=id2>start. <br>한글1, 한글2, 한글3, 한글4, 한글5</p>
+    <p id=id3>end. <br>한글1, 한글2, 한글3, 한글4, 한글5</p>
+    <p id=id4>left. <br>한글1, 한글2, 한글3, 한글4, 한글5</p>
+    <p id=id5>right. <br>한글1, 한글2, 한글3, 한글4, 한글5</p>
+    <p id=id6>center. <br>한글1, 한글2, 한글3, 한글4, 한글5</p>
+  </body>
+</html>
+
+<!--
+  마지막 라인만 정렬
+  현재 firefox에서만 지원 (15.11.14)
+
+  style에서 text-align: justify가 반드시 들어가야 함.
+--.

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id1, #id2, #id3{
+        position: absolute; width: 200px; height: 200px; border: black solid 1px;
+        left: 100px; background: ForestGreen
+      }
+      #id11, #id12, #id13{
+        position: absolute; top: 25px; left: 25px;
+        width: 150px; height: 150px;
+        background-color: cornflowerBlue; line-height: 150px; text-align: center;
+        transform: rotateX(45deg)
+      }
+
+      .id1-perspective {perspective: 100px; perspective-origin: 75px 75px}
+      .id2-perspective {perspective: 100px; perspective-origin: 100px 75px}
+      .id3-perspective {perspective: 100px; perspective-origin: 75px 100px}
+    </style>
+  </head>
+  <body>
+    <div id=id1><div id=id11>75px 75px</div></div>
+    <div id=id2><div id=id12>100px 75px</div></div>
+    <div id=id3><div id=id13>75px 100px</div></div>
+
+    <script type="text/javascript">
+      function addEvent(id, origin){
+        var el = document.getElementById(id);
+        el.addEventListener('click', function(2){
+          e.currentTarget.className = origin + 'rotate';
+        }, false);
+      }
+
+      addEvent('id1', 'id1-perspective');
+      addEvent('id2', 'id2-perspective');
+      addEvent('id3', 'id3-perspective');
+    </script>
+  </body>
+</html>
+
+
+<!--
+  보는 위치 지정
+-->

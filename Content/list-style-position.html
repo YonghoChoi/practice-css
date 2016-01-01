@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .outside{list-style-position: outside}
+      .inside{list-style-position: inside}
+    </style>
+  </head>
+  <body>
+    <ul class=outside>
+      <li>outside는 마커를 밖에 표시하므로 다음 줄의 시작 위치가 같다.</li>
+      <li>outside는 마커를 밖에 표시하므로 다음 줄의 시작 위치가 같다.</li>
+    </ul>
+    <ul class=inside>
+      <li>inside는 마커를 안에 표시하므로 다음 줄이 앞으로 나가 표시된다.</li>
+      <li>inside는 마커를 안에 표시하므로 다음 줄이 앞으로 나가 표시된다.</li>
+    </ul>
+  </body>
+</html>
+
+<!--
+  마커의 위치는 동일하게 존재하는 것이기 때문에 inside의 경우 첫 라인만 안으로 들여쓰기를 하고 그 다음 라인부터는 마커 위치 다음에 글이 오기 때문에
+  outside로 하는 것이 더 깔끔하게 보인다. (말로 표현이 어려운데 걍 실행해보고 마커위치와 다음라인 위치를 확인해봐라.)
+-->

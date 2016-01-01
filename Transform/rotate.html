@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id1, #id2, #id3{
+        position: absolute; width: 110px; height: 110px;
+        background-repeat: no-repeat;
+        background-color: CornflowerBlue;
+        background-image: url('../images/rose.jpg');
+        background-position: center;
+      }
+      #id1{top: 100px; left: 100px;}
+      #id2{top: 100px; left: 400px;}
+      #id3{top: 100px; left: 700px;}
+      .rotate1 {transform: rotate(90deg)}
+      .rotate2 {transform: rotateX(180deg)}
+      .rotate3 {transform: rotateY(-90deg)}
+    </style>
+  </head>
+  <body>
+    <div id=id1>90</div>
+    <div id=id2>180</div>
+    <div id=id3>-90</div>
+
+    <script type="text/javascript">
+      function addEvent(id, rotate){
+        var el = document.getElementById(id);
+        el.addEventListener('click', function(e){
+          e.currentTarget.className = rotate;
+        }, false);
+      }
+      addEvent('id1', 'rotate1');
+      addEvent('id2', 'rotate2');
+      addEvent('id3', 'rotate3');
+    </script>
+  </body>
+</html>
+
+<!--
+  회전
+    양수 값이면 시계 방향으로
+    음수 값이면 시계 반대 방향으로
+    rotateX(), rotateY()는 3차원
+-->

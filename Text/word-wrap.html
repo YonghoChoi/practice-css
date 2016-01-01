@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p{
+        width: 270px;
+        font-size: 20px; font-family: '맑은 고딕';
+        border: solid 2px hsl(270, 50%, 90%);
+      }
+    </style>
+  </head>
+  <body>
+    <p id=id1 style="word-wrap: normal">#id1. 한글은띄어쓰기를하므로줄바꿈에영향이적음</p>
+    <p id=id2 style="word-wrap: break-word">#id2. 한글은띄어쓰기를하므로줄바꿈에영향이적음</p>
+    <p id=id3 style="word-wrap: normal">#id3. Aadlkfgaldkfglakjdfnvlakjfnglkjadfnlkvjadfnlkjadfnglk</p>
+    <p id=id4 style="word-wrap: break-word">#id4. Aadlkfgaldkfglakjdfnvlakjfnglkjadfnlkvjadfnlkjadfnglk</p>
+  </body>
+</html>
+
+<!--
+  단어가 박스 폭을 넘칠 때 줄 바꿈 여부
+    정식 명칭은 overflow-wrap이고 word-wrap은 별칭(하지만 둘 다 지원하므로 상관 없음)
+-->

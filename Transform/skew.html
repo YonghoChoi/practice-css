@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id00, #id1, #id2, #id3{
+        border: solid blue 2px;
+        position: absolute; width: 150px; height: 84px;
+      }
+      #id00, #id11, #id12, #id13{
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: CornflowerBlue;
+        background-image: url('../images/rose.jpg');
+        background-position: center;
+      }
+      #id00{top: 100px; left: 100px;}
+      #id1{top: 100px; left: 300px;}
+      #id2{top: 100px; left: 500px;}
+      #id3{top: 100px; left: 700px;}
+      .skewX {transform: skewX(20deg)}
+      .skewY {transform: skewY(20deg)}
+      .skewXY {transform: skewXY(20deg, 20deg)}
+    </style>
+  </head>
+  <body>
+    <div id=id00>원본</div>
+    <div id=id1><div id=id11>x</div></div>
+    <div id=id2><div id=id12>y</div></div>
+    <div id=id3><div id=id13>xy</div></div>
+
+    <script type="text/javascript">
+      function addEvent(id, skew){
+        var el = document.getElementById(id);
+        el.addEventListener('click', function(e){
+          e.currentTarget.className = skew;
+        }, false);
+      }
+      addEvent('id1', 'skewX');
+      addEvent('id2', 'skewY');
+      addEvent('id3', 'skewXY');
+    </script>
+  </body>
+</html>
+
+<!--
+  회전
+    양수 값이면 시계 방향으로
+    음수 값이면 시계 반대 방향으로
+    rotateX(), rotateY()는 3차원
+-->

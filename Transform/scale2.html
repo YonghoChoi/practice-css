@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id1, #id2, #id3{
+        position: absolute; width: 110px; height: 110px;
+        background-repeat: no-repeat;
+        background-color: CornflowerBlue;
+        background-image: url('../images/rose.jpg');
+        background-position: center;
+      }
+      #id1{top: 120px; left: 100px;}
+      #id2{top: 120px; left: 400px;}
+      #id3{top: 120px; left: 700px;}
+
+      #id1:hover{transform: scale(0.5, 0.5)}
+      #id2:hover{transform: scaleX(1.5)}
+      #id3:hover{transform: scaleY( 1.5)}
+    </style>
+  </head>
+  <body>
+    <div id=id1>xy</div>
+    <div id=id2>x</div>
+    <div id=id3>y</div>
+  </body>
+</html>

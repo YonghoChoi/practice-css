@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style>
+      p{border: solid blue 1px; width: 160px;}
+      #back{position: absolute; top: 100px; left: 50px; width: 240px; height: 120px; background: #E7E4E4;}
+    </style>
+
+    <div id=back></div>
+    <div style="position:absolute; top: 100px; left: 50px;">
+      <p id=id1 style="margin: 20px">margin: 20px</p>
+      <p id=id2 style="margin: 30px">margin: 30px</p>
+    </div>
+  </body>
+</html>
+
+<!--
+1. 연속된 엘리먼트의 수직 방향에서 겹쳐진 컨텐츠 중 마진 값이 큰 값으로 margin-bottom을 상쇄한다.
+2. #id1과 #id2의 margin-left가 20px이므로 왼쪽에서 20px 간격을 두고 border가 표시되었다.
+3. #id1의 margin-bottom이 20px이고 #id2의 margin-top이 20px이므로 40px 간격을 띄워야 하나 20px 간격을 띄웠다.
+4. 이를 마진 상쇄라고 한다.
+  #id2가 #id1의 margin-bottom을 무시하고 #id1의 border-bottom부터 20px 간격을 띄운다.
+5. <p>의 height가 21px이므로 #id1과 #id2 각각 (20(top)+21+20(bottom)=61px)이 된다.
+  한편 #back의 height가 120px이며 #id + #id2의 height가 122이므로 바탕색의 아래 여분이 18px가 되어야 하나 더 크게 보이는 것은 margin-top 상쇄를 했기 때문이다.
+-->

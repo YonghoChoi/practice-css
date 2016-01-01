@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p{width: 150px; height: 60px;
+        border: 2px solid hsl(270, 50%, 90%);
+        overflow: hidden; white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <p style="text-overflow: clip">가나다라마바사아자차카타파하</p>
+    <p style="text-overflow: ellipsis">가나다라마바사아자차카타파하</p>
+    <p style="text-overflow: '^^^'">가나다라마바사아자차카타파하</p>
+    <p style="text-overflow: '...' ',,,'">가나다라마바사아자차카타파하</p>
+  </body>
+</html>
+
+<!--
+  텍스트가 행 방향 영역을 넘칠 때 표시 방법
+    overflow 값이 visible 이외의 엘리먼트에 적용
+    overflow: hidden, white-space: nowrap을 같이 작성
+
+  값
+    clip : 넘치는 텍스트를 표시하지 않음
+    ellipsis : 행 끝에 생략 부호(...) 표시
+    <string> : 행 끝에 <string>에 지정한 문자열 표시
+
+
+  이러한 섬세한 표현을 가능하게 해주는 것이 CSS의 묘미
+-->

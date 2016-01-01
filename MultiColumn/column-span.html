@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id1, #id3 {
+        width: 250px; border: solid 2px black;
+        -webkit-column-count: 4;
+      }
+      #id2{background: yellow; -webkit-column-span: none; -webkit-column-span: none}
+      #id3{background: yellow; -webkit-column-span: all; -webkit-column-span: all}
+    </style>
+  </head>
+  <body>
+    <div id=id1>가나다라마바사아자차카타파하
+      <div id=id2>column-span: none</div>가나다라마바사아자차카타파하
+    </div><br>
+    <div id=id1>가나다라마바사아자차카타파하
+      <div id=id3>column-span: all</div>가나다라마바사아자차카타파하
+    </div>
+  </body>
+</html>

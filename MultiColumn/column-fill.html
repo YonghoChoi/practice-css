@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id1, #id2 {
+        width: 250px; border: solid 2px hsl(270, 50%, 90%);
+        -moz-column-width: 60px;
+      }
+      #id1{-moz-column-fill: balance}
+      #id2{-moz-column-fill: auto}
+    </style>
+  </head>
+  <body>
+    <div id=id1>
+      <p>column-fill: balance</p>
+      <p>가나다라마바</p>
+      <p>가나다라마바사아자차카타파하</p>
+    </div><br>
+    <div id=id2>
+      <p>column-fill: auto</p>
+      <p>가나다라마바</p>
+      <p>가나다라마바사아자차카타파하</p>
+    </div>
+  </body>
+</html>
+<!--
+  column 높이의 균등 맞춤
+    firefox에서 지원(15.11.15)
+
+  column 프로퍼티에는 vendor prefix가 필요
+  -webkit- : 크롬, 사파리
+  -moz- : 파이어폭스
+-->

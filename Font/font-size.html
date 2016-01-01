@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .wrapper{
+        font-size: 20px; font-family: '맑은 고딕';}
+      }
+    </style>
+  </head>
+  <body>
+    <div class=wrapper>
+      <span style="background:yellow"><absolute-size></span>
+      <p id=id1 style="font-size: xx-small">xx-small: 가나다라</p>
+      <p id=id2 style="font-size: x-small">x-small: 가나다라</p>
+      <p id=id3 style="font-size: small">small: 가나다라</p>
+      <p id=id4 style="font-size: medium">medium: 가나다라</p>
+      <p id=id5 style="font-size: large">large: 가나다라</p>
+      <p id=id6 style="font-size: x-large">x-large: 가나다라</p>
+      <p id=id7 style="font-size: xx-large">xx-large: 가나다라</p>
+    </div>
+    <div class=wrapper>
+      <span style="background:yellow"><relative-size></span>
+      <p id=id11 style="font-size: larger">lager: 가나다라</p>
+      <p id=id12 style="font-size: smaller">smaller: 가나다라</p>
+      <p id=id13 style="font-size: 120%">120%: 가나다라</p>
+    </div>
+  </body>
+</html>
+
+<!--
+  <length> : 절대값으로 폰트 사이즈 지정
+  <percentage> : 페어런트의 폰트 사이즈에 대한 비율 (em과 동일)
+  <absolute-size> : 브라우저에 의해 유지 및 계산되는 폰트 사이즈 테이블 인덱스
+      xx-small~xx-large
+  <relative-size> : 페이런트의 폰트 사이즈 테이블을 기준으로 상대적 해석
+      lager, smaller
+-->

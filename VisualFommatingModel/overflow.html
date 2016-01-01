@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style media="screen">
+      #id1,#id2,#id3,#id4,#id5,#id6{
+        width: 80px; height: 40px; border: 2px solid blue; margin-bottom: 50px;
+      }
+    </style>
+
+    <div id=wrapper>
+      <div id=id1 style="overflow:visible">#id1. 가나다라마바사아자차카타파하</div>
+      <div id=id2 style="overflow:hidden">#id2. 가나다라마바사아자차카타파하</div>
+      <div id=id3 style="overflow:scroll">#id3. 가나다라마바사아자차카타파하</div>
+      <div id=id4 style="overflow:auto">#id4. 가나다라마바사아자차카타파하</div>
+      <div id=id5 style="overflow:no-display">#id5. 가나다라마바사아자차카타파하</div>
+      <div id=id6 style="overflow:no-content">#id6. 가나다라마바사아자차카타파하</div>
+    </div>
+  </body>
+</html>
+
+<!--
+  1. #id4는 브라우저에서 지원하므로 UI 츨면에서 혼동이 ㅂ라생할 수 있음
+  2. #id5,6은 CSS3에서 추가된 기능. 현재(2015.10.31) 브라우저에서 지원하지 않음
+-->

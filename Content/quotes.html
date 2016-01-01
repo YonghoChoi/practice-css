@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id1{quotes:"<<" ">>" "<" ">"}
+      #id1:before{content:open-quote}
+      #id1:after{content:close-quote}
+
+      #id2:before{content:open-quote}
+      #id2:after{content:close-quote}
+
+      #id3:before{content:no-open-quote}
+      #id3:after{content:no-close-quote}
+    </style>
+  </head>
+  <body>
+    <p id=id1>#id1 인용 부호</p>
+    <p id=id2>#id2 인용 부호</p>
+    <p id=id3>#id3 인용 부호</p>
+  </body>
+</html>

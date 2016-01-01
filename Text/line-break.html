@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p{
+        width: 270px;
+        font-size: 18px; font-family: '맑은 고딕';
+        border: solid 2px hsl(270, 50%, 90%);
+      }
+      #id1{-webkit-line-break; auto; line-break: auto;}
+      #id2{line-break: normal}
+      #id3{line-break: strict}
+      #id4{line-break: loose}
+    </style>
+  </head>
+  <body>
+    <p id=id1>#id1. auto. 가나다라?마?바?사</p>
+    <p id=id2>#id2. normal. 가나다?라?마?바사</p>
+    <p id=id3>#id3. strict. 가나다라-마-바?사</p>
+    <p id=id4>#id4. loose. 가나다라?마? 바? 사</p>
+  </body>
+</html>
+
+<!--
+  라인 끝의 심볼 문자 처리. css3
+
+  normal
+  strict
+  auto : 브라우저가 알아서 분리
+  loose : 느슨한 줄 분리 (신문형태)
+
+
+  코드 설명
+    #id2에서 첫 번째 줄 오른쪽에 공간이 많이 빈 것은
+     -"라?"에서 "라"를 첫번째 줄 끝에 작성하면 "?"가 줄 처음에 오게 되는데
+     - 이를 방지하기 위해서 이다.
+    #id3는 line-break: strict로 "~, -, _"가 줄 처음에 오는 것을 방지한다.
+     - 이를 위해 첫 번째 줄 오른쪽에 공간이 많이 비었다.
+-->

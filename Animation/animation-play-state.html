@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .wrapper{position: absolute; top: 100px; left: 80px;}
+      #id1{position: relative; margin: 10px; border: blue solid 1px; width: 300px; height: 80px}
+      .moving{
+        animation-name: trans; animation-duration: 2s;
+        animation-iteration-count: 10; animation-direction: alternate
+      }
+
+      @keyframes trans {
+        0% {transform: translate(0);}
+        100% {transform: translate(220px, 0px);}
+      }
+      .paused{animation-play-state: paused}
+      .running{animation-play-state: running}
+    </style>
+  </head>
+  <body>
+    <div class=wrapper>
+      <div id=id1><img src="../images/rose.jpg"</div>
+      <div style="position:absolute; top: 300px">
+        <input type="radio" id=id11 name=choice>
+          <label for=id11>paused</label>
+        <input type="radio" id=id12 name=choice>
+          <label for=id12>running</label>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function addEvent(id, direction){
+        var el = document.getElementById(id);
+        el.addEventListener('click', function(e){
+          var node = document.getElementById('id1').firstElementChild;
+          node.className = 'moving' + (e.currentTarget.id === 'id11'?'paused':'running');
+        }, false);
+      }
+      addEvent('id11', 'id12');
+    </script>
+
+  </body>
+</html>

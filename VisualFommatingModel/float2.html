@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style media="screen">
+      .cls-base{
+        position:absolute; top: 100px; left: 50px;
+        width: 200px; height: 150px; background: #f5f5f5;
+      }
+      .cls1, .cls2, .cls3{width: 50px; height: 50px;}
+      .cls1{background: yellow;}
+      .cls2{background: #c9e47a;}
+      .cls3{background: lime; width: 150px; margin-top: 20px;}
+    </style>
+
+    <div class="cls-base">
+      <div class=cls1 id=id1 style="float: left">#id1</div>
+      <div class=cls2 id=id2 style="float: left">#id1</div>
+      <div class=cls3 id=id3 style="float: left">#id1</div>
+    </div>
+  </body>
+</html>
+
+<!--
+  float을 사용하면 마진 상쇄가 발생하지 않는다.
+  cls2에 margin-bottom을 주면 상쇄가 cls3과 마진 상쇄가 발생할 것 같은데
+  float을 사용했기 때문에 발생하지 않고 margin 값이 더해져서 마진이 발생한다.
+-->

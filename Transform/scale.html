@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id1, #id2, #id3{
+        position: absolute; width: 110px; height: 110px;
+        background-repeat: no-repeat;
+        background-color: CornflowerBlue;
+        background-image: url('../images/rose.jpg');
+        background-position: center;
+      }
+      #id1{top: 120px; left: 100px;}
+      #id2{top: 120px; left: 400px;}
+      #id3{top: 120px; left: 700px;}
+      .scaleXY{transform: scale(1.5, 1.5)}
+      .scaleX{transform: scaleX(1.5)}
+      .scaleY{transform: scaleY( 1.5)}
+    </style>
+  </head>
+  <body>
+    <div id=id1>xy</div>
+    <div id=id2>x</div>
+    <div id=id3>y</div>
+
+    <script type="text/javascript">
+      function addEvent(id, scale){
+        var el = document.getElementById(id);
+        el.addEventListener('click', function(e){
+          e.currentTarget.className = scale;
+        }, false);
+      }
+      addEvent('id1', 'scaleXY');
+      addEvent('id2', 'scaleX');
+      addEvent('id3', 'scaleY');
+    </script>
+  </body>
+</html>
+
+<!--
+  jpg 이미지는 이미지 확대 시 깨져서 보이므로 이쁘지 않은데,
+  이를 위해 svg를 사용한다.
+-->

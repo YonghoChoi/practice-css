@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p{width: 200px; border: solid 2px black}
+      #id1{
+        -webkit-column-width: auto;
+        -moz-column-width: auto;
+      }
+      #id2{
+        -webkit-column-width: 70px;
+        -moz-column-width: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id=id1>가나다라마바사아자차카타파하</p>
+    <p id=id2>가나다라마바사아자차카타파하</p>
+  </body>
+</html>
+
+
+<!--
+  vendor prefix 필요
+  -o-column-width: auto; -ms-column-width: auto;
+  -moz-column-width: auto; -webkit-column-width: auto;
+
+  -ms- : 인터넷 익스플로러
+  -webkit- : 크롬, 사파리
+  -moz- : 파이어폭스
+-->

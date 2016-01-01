@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p{
+        width: 270px;
+        font-size: 20px; font-family: '맑은 고딕';
+        border: solid 2px hsl(270, 50%, 90%);
+      }
+    </style>
+  </head>
+  <body>
+    <p id=id1 style="word-break: normal">#id1. 단어가 폭을 넘칠 때 행의 분리 여부를 지정한다.</p>
+    <p id=id2 style="word-break: break-all">#id2. 단어가 폭을 넘칠 때 행의 분리 여부를 지정한다.</p>
+    <p id=id3 style="word-break: break-all">#id3. Have a nice day. Have a nice day</p>
+    <p id=id4 style="word-break: keep-all">#id4. 단어가 폭을 넘칠 때 행의 분리 여부를 지정한다.</p>
+    <p id=id5 style="word-break: keep-all">#id5. Have a nice day. Have a nice day</p>
+  </body>
+</html>
+
+<!--
+  문자 사이에서 줄 분리 기준
+    CJK(China, Japan, Korea 문자를 나타내는 용어) 적용
+
+  normal : 디폴트 라인 분리 기준 적용
+  break-all : 문자 분리를 고려하지 않고 폭이 넘치는 부분에서 라인 분리
+  keep-all : 단어를 연결하고 단어가 구분되는 위치에서 라인 분리
+-->

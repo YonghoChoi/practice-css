@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id1, #id2, #id3, #id4{
+        position: absolute; width: 150px; height: 84px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: CornflowerBlue;
+        background-image: url('../images/simba.jpg');
+        background-position: center;
+        object-fit: fill;
+      }
+      #id1{top: 90px; left: 80px;}
+      #id2{top: 90px; left: 300px;}
+      #id3{top: 90px; left: 500px;}
+      #id4{top: 90px; left: 700px;}
+      .matrix1 {transform: matrix(1.5, 0, 0, 1.5, 0, 0)}
+      .matrix2 {transform: matrix(1, 0.3, 0.3, 1, 0, 0)}
+      .matrix3 {transform: matrix(1, 0, 0, 1, 100, 50)}
+      .matrix4 {transform: matrix(1.5, 0.3, 0.3, 1.5, 100, 200)}
+    </style>
+  </head>
+  <body>
+    <div id=id1>scale</div>
+    <div id=id2>skew</div>
+    <div id=id3>translate</div>
+    <div id=id4>all</div>
+
+    <script type="text/javascript">
+      function addEvent(id, matrix){
+        var el = document.getElementById(id);
+        el.addEventListener('click', function(e){
+          e.currentTarget.className = matrix;
+        }, false);
+      }
+      addEvent('id1', 'matrix1');
+      addEvent('id2', 'matrix2');
+      addEvent('id3', 'matrix3');
+      addEvent('id4', 'matrix4');
+    </script>
+  </body>
+</html>
+
+<!--
+  확대/축소, 이동, 경사 행렬
+  행렬 값
+    값 == (a, b, c, d, e, f)
+    a : 수평
+    b : 수직
+
+  ==> scale, skew, transfrom을 한꺼번에
+-->

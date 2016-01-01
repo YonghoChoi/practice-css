@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #id1, #id2, #id3, #id4, #id5, #id6, #id7, #id8, #id9, #id10, #id11, #id12, #id13{
+        width: 200px; height: 150px; border: 2px solid red;
+      }
+
+      #id1{ background: linear-gradient(white, black); }
+      #id2{ background: linear-gradient(to bottom, white, black); }
+      #id3{ background: linear-gradient(to right, white, black); }
+      #id4{ background: linear-gradient(to top, white, black); }
+      #id5{ background: linear-gradient(to left, white, black); }
+      #id6{ background: linear-gradient(90deg, white, black); }
+      #id7{ background: linear-gradient(-90deg, white, black); }
+      #id8{ background: linear-gradient(white 20%, black 80%); }
+      #id9{ background: linear-gradient(green, yellow 30%, black); }
+      #id10{ background: linear-gradient(green, yellow 60%, black); }
+      #id11{ background: linear-gradient(red, orange, yellow, green, blue, navy, purple); }
+      #id12{ background: linear-gradient(to top right, green, white, black); }
+      #id13{ background: linear-gradient(to bottom left, green, white, black); }
+    </style>
+  </head>
+  <body>
+    <p>top에서 bottom으로 그라데이션</p>
+    <p id=id1></p><br>
+
+    <p>동서남북 방향으로 그라데이션</p>
+    <p id=id2></p>
+    <p id=id3></p>
+    <p id=id4></p>
+    <p id=id5></p>
+
+    <p>90deg 사용</p>
+    <p id=id6></p>
+
+    <p>-90deg 사용(반대 방향)</p>
+    <p id=id7></p>
+
+    <p>비율 조정 (white 20%, black 80%)</p>
+    <p id=id8></p>
+
+    <p>다 수의 색 사용</p>
+    <p id=id9></p>
+    <p id=id10></p>
+    <p id=id11></p>
+
+    <p>side-or-corner 지정</p>
+    <p id=id12></p>
+    <p id=id13></p>
+  </body>
+</html>
+
+<!--
+  선형 그라데이션 함수
+    - 첫 번째 파라미터 : 그라데이션 라인 방향, 위치. 생략가능
+    - 두 번째 파라미터 : 그라데이션 라인 색
+
+  angle
+    선의 각도로 90deg는 시계 방향
+
+  키워드
+    to??? 형식으로 방향을 지정하는 것을 키워드라 한다.
+
+-->
